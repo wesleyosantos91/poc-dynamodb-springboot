@@ -5,7 +5,7 @@
 
 <div align="center">
 
-# POC - Ports & Adapters Architecture ou Arquitetura Hexagonal
+# POC - Crud Spring Boot com DynamoDB
 ![](https://img.shields.io/badge/Autor-Wesley%20Oliveira%20Santos-brightgreen)
 ![](https://img.shields.io/badge/Language-java-brightgreen)
 ![](https://img.shields.io/badge/Framework-springboot-brightgreen)
@@ -81,5 +81,8 @@ aws dynamodb put-item \
 
 # Utilização
 
+## OpenAPI - Swagger
+http://localhost:8081/openapi/swagger-ui/index.html
+
 ## OpenAPI - api-docs
-http://localhost:8080/ms-person/v3/api-docs
+http://localhost:8081/openapi/v3/api-docs

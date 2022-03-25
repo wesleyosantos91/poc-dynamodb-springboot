@@ -1,22 +1,22 @@
 {
-  "TableName": "tb_person03",
+  "TableName": "tb_person",
   "KeySchema": [
     {
-      "AttributeName": "id",
+      "AttributeName": "pk",
       "KeyType": "HASH"
+    },
+    {
+      "KeyType": "RANGE",
+      "AttributeName": "sk"
     }
   ],
   "AttributeDefinitions": [
     {
-      "AttributeName": "id",
+      "AttributeName": "pk",
       "AttributeType": "S"
     },
     {
-      "AttributeName": "cpf",
-      "AttributeType": "S"
-    },
-    {
-      "AttributeName": "email",
+      "AttributeName": "sk",
       "AttributeType": "S"
     }
   ],

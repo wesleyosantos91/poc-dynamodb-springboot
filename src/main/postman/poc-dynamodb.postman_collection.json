@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "c51ab2ef-9501-4dd8-8a74-0c85e1fbd954",
+		"name": "poc-dynamodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Isabela Mata de Arruda\",\r\n    \"date_of_birth\": \"1981-03-01\",\r\n    \"cpf\": \"70582698820\",\r\n    \"email\": \"isabela.arruda@geradornv.com.br\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/v1/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET WITH ID AND CPF",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/v1/persons/PERSON%235dbfa4d9-58d2-4e12-9714-c4ae9ef29a88/03669252100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"persons",
+						"PERSON%235dbfa4d9-58d2-4e12-9714-c4ae9ef29a88",
+						"03669252100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Wesley De Oliveira Santos\",\r\n    \"date_of_birth\": \"1991-06-12\",\r\n    \"email\": \"wesleyonsantos91@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/persons/PERSON%235dbfa4d9-58d2-4e12-9714-c4ae9ef29a88/03669252100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"persons",
+						"PERSON%235dbfa4d9-58d2-4e12-9714-c4ae9ef29a88",
+						"03669252100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/v1/persons/PERSON%235dbfa4d9-58d2-4e12-9714-c4ae9ef29a88/03669252100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"persons",
+						"PERSON%235dbfa4d9-58d2-4e12-9714-c4ae9ef29a88",
+						"03669252100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

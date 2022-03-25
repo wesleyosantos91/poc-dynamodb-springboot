@@ -6,7 +6,7 @@ services:
     hostname: dynamodb
     restart: always
     volumes:
-      -  "volumedynamodb:/home/dynamodblocal/data"
+      - "volumedynamodb:/home/dynamodblocal/data"
     ports:
       - "8000:8000"
     user: root
